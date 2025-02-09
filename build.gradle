@@ -22,6 +22,14 @@ bootJar {
     mainClass = 'com.example.autobank.AutobankApplicationKt'  // Kotlin class with 'Kt' suffix
 }
 
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'com.example.autobank.AutobankApplicationKt'
+        )
+    }
+}
+
 repositories {
     mavenCentral()
 }
